@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import { EventList } from "../EventList/EventList";
+import { UserContext } from '../../context/userContext'
 // import SignIn from "../SignIn";
 // import { Link, withRouter } from "react-router-dom";
 import "./Headerstyle.css";
 const Header = () => {
+  const {user} = useContext(UserContext)
   return (
     <div class="Navbar">
     <nav>
@@ -49,7 +51,7 @@ const Header = () => {
           <div class="admin-profile hide">
            
             <div class="admin-info">
-              <h3>Darshan Tarsariya</h3>
+              <h3>{`${user.firstName} ${user.lastName}`}</h3>
            
             </div>
           </div>
