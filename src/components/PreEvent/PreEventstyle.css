@@ -7,3 +7,14 @@
 	text-align: left;
 	font-weight: 600;
 }
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+  }

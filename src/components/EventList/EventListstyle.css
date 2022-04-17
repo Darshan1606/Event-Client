@@ -5,7 +5,7 @@
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  padding: 2rem 0;
+  padding: 0;
   display: grid;
   place-items: center;
   box-sizing: border-box;
@@ -15,11 +15,22 @@
     padding: 2rem 0.5rem;
     margin: 0;
 }
+.search{
+  margin-top: 2rem;
+  align-items: left;
+}
+.cont {
+  width: 100%;
+}
+.cont .tab{
+  width: 100%;
+ margin-top: 2rem;
+}
 .events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     
   }
   @media (min-width: 11500px) {
@@ -30,15 +41,18 @@
   }
   
   .card {
+    margin:2rem;
     background-color: #fff;
     width: 350px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
- 
+ TabPane {
+   font-size: 10rem;
+ }
   .card h2.name {
     text-align: center;
     padding: 1rem 2rem 0.5rem;
@@ -133,3 +147,10 @@
     order: 100;
   }
   
+  .more-btn{
+    color: #404040;
+  }
+  .more-btn #btn{
+    background-color: #00c897;
+    color: #404040;
+  }
